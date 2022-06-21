@@ -6,9 +6,9 @@ import java.util.Comparator;
 
 class Priorities{
     // Create a private Priority Queue of Student type.
-    private PriorityQueue<Student> studentPriorityQueue = new PriorityQueue<>(Comparator.comparing(Student::getCGPA).reversed() // Sort CGPA in descending order
-                    .thenComparing(Student::getName)    // Sort name in ascending order
-                    .thenComparing(Student::getID));    // Sort ID in ascending order
+    private PriorityQueue<Student> studentPriorityQueue = new PriorityQueue<>(Comparator.comparing(Student::getCGPA).reversed() // Sort CGPA by descending order
+                    .thenComparing(Student::getName)    // Sort name by ascending order
+                    .thenComparing(Student::getID));    // Sort ID by ascending order
                     
     private List <Student> studentList = new ArrayList<Student>();
     
